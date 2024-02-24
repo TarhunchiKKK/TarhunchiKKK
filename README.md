@@ -124,19 +124,19 @@
                     <img src="./assets/linkedin.svg" alt="Linkedin" style="font-size:24px;color:black;"></img>
                 </a>
                 <a style="width:35px;height:35px;border:1px solid black;border-radius:4px;display:flex;justify-content:center;align-items:center;background-color:#fff;" target="_blank" href="mailto:kostabarilo12@gmail.com">
-                    <img src="./assets/gmail.svg" alt="Gmail" style="font-size:24px;color:black;"></img>
+                    <img src="./assets/gmail.svg" alt="Gmail" width="40px" height="40px" style="color:black;"></img>
                 </a>
                 <a style="width:35px;height:35px;border:1px solid black;border-radius:4px;display:flex;justify-content:center;align-items:center;background-color:#fff;" target="_blank" href="https://t.me/kostianchick">
-                    <img src="./assets/telegram.svg" alt="Telegram" style="font-size:24px;color:black;"></img>
+                    <img src="./assets/telegram.svg" alt="Telegram" width="40px" height="40px" style="color:black;"></img>
                 </a>
                 <a style="width:35px;height:35px;border:1px solid black;border-radius:4px;display:flex;justify-content:center;align-items:center;background-color:#fff;" target="_blank" href="https://vk.com/id350691569">
-                    <img src="./assets/vk.svg" alt="VK" style="font-size:24px;color:black;"></img>
+                    <img src="./assets/vk.svg" alt="VK" width="40px" height="40px" style="color:black;"></img>
                 </a>
                 <a style="width:35px;height:35px;border:1px solid black;border-radius:4px;display:flex;justify-content:center;align-items:center;background-color:#fff;" target="_blank" href="https://www.instagram.com/_tarhunchick_/">
-                    <img src="./assets/instagram.svg" alt="Instagram" style="font-size:24px;color:black;"></img>
+                    <img src="./assets/instagram.svg" alt="Instagram" width="40px" height="40px" style="color:black;"></img>
                 </a>
                 <a style="width:35px;height:35px;border:1px solid black;border-radius:4px;display:flex;justify-content:center;align-items:center;background-color:#fff;" target="_blank" href="https://github.com/TarhunchiKKK">
-                    <img src="./assets/github.svg" alt="GitHub" style="font-size:24px;color:black;"></img>
+                    <img src="./assets/github.svg" alt="GitHub" width="40px" height="40px" style="color:black;"></img>
                 </a>
             </div>
         </div>
