@@ -121,22 +121,22 @@
         <div class="contacts">
             <div style="display:flex;justify-content:space-between;align-items:center;width:50%;margin:auto;padding-top:20px;">
                 <a style="width:35px;height:35px;border:1px solid black;border-radius:4px;display:flex;justify-content:center;align-items:center;background-color:#fff;" target="_blank" href="https://www.linkedin.com/in/%D0%BA%D0%BE%D0%BD%D1%81%D1%82%D0%B0%D0%BD%D1%82%D0%B8%D0%BD-%D0%B1%D0%B0%D1%80%D0%B8%D0%BB%D0%BE-333974290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-                    <img src="./assets/linkedin.svg" alt="Linkedin" width="40px" height="40px"  style="color:black;"></img>
+                    <img src="./assets/linkedin.svg" alt="Linkedin" width="40px" height="40px"  style="color:white;"></img>
                 </a>
                 <a style="width:35px;height:35px;border:1px solid black;border-radius:4px;display:flex;justify-content:center;align-items:center;background-color:#fff;" target="_blank" href="mailto:kostabarilo12@gmail.com">
-                    <img src="./assets/gmail.svg" alt="Gmail" width="40px" height="40px" style="color:black;"></img>
+                    <img src="./assets/gmail.svg" alt="Gmail" width="40px" height="40px" style="color:white;"></img>
                 </a>
                 <a style="width:35px;height:35px;border:1px solid black;border-radius:4px;display:flex;justify-content:center;align-items:center;background-color:#fff;" target="_blank" href="https://t.me/kostianchick">
-                    <img src="./assets/telegram.svg" alt="Telegram" width="40px" height="40px" style="color:black;"></img>
+                    <img src="./assets/telegram.svg" alt="Telegram" width="40px" height="40px" style="color:blwhiteack;"></img>
                 </a>
                 <a style="width:35px;height:35px;border:1px solid black;border-radius:4px;display:flex;justify-content:center;align-items:center;background-color:#fff;" target="_blank" href="https://vk.com/id350691569">
-                    <img src="./assets/vk.svg" alt="VK" width="40px" height="40px" style="color:black;"></img>
+                    <img src="./assets/vk.svg" alt="VK" width="40px" height="40px" style="color:white;"></img>
                 </a>
                 <a style="width:35px;height:35px;border:1px solid black;border-radius:4px;display:flex;justify-content:center;align-items:center;background-color:#fff;" target="_blank" href="https://www.instagram.com/_tarhunchick_/">
-                    <img src="./assets/instagram.svg" alt="Instagram" width="40px" height="40px" style="color:black;"></img>
+                    <img src="./assets/instagram.svg" alt="Instagram" width="40px" height="40px" style="color:white;"></img>
                 </a>
                 <a style="width:35px;height:35px;border:1px solid black;border-radius:4px;display:flex;justify-content:center;align-items:center;background-color:#fff;" target="_blank" href="https://github.com/TarhunchiKKK">
-                    <img src="./assets/github.svg" alt="GitHub" width="40px" height="40px" style="color:black;"></img>
+                    <img src="./assets/github.svg" alt="GitHub" width="40px" height="40px" style="color:white;"></img>
                 </a>
             </div>
         </div>
