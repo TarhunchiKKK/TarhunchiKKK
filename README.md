@@ -1,6 +1,6 @@
 <h1 style="text-align:center;">Hello, I am Kostya👋</h1>
         <div class="skills">
-            <h2>My skills</h2>
+            <h2>My Skills</h2>
             <div style="display:flex;flex-wrap:wrap;gap:10px;width:100%;">
                 <div style="width:48%;padding-bottom:20px;border:1px solid gray;border-radius:30px;">
                     <h3 style="text-align:center;">Languages💻</h3>
@@ -106,6 +106,7 @@
             </div>
         </div>
         <div style="padding-top:20px;padding-bottom:20px;">
+            <h2>My GitHub Stats</h2>
             <div style="margin:auto;display:flex;flex-direction:column;align-items:center;">
                 <a href="http://www.github.com/TarhunchiKKK">
                     <img src="https://github-readme-stats-beta-ten-21.vercel.app/api?username=TarhunchiKKK&show_icons=true&hide=issues,&count_private=true&title_color=2F80ED&text_color=ffffff&icon_color=2F80ED&bg_color=003141&hide_border=true&show_icons=true&show=prs_merged,prs_merged" alt="TarhunchiKKK's GitHub stats" />
@@ -119,6 +120,7 @@
             </div>
         </div>
         <div class="contacts">
+            <h2>Contact Me:</h2>
             <div style="display:flex;justify-content:space-between;align-items:center;width:50%;margin:auto;padding-top:20px;">
                 <a style="width:35px;height:35px;border:1px solid black;border-radius:4px;display:flex;justify-content:center;align-items:center;background-color:#fff;" target="_blank" href="https://www.linkedin.com/in/%D0%BA%D0%BE%D0%BD%D1%81%D1%82%D0%B0%D0%BD%D1%82%D0%B8%D0%BD-%D0%B1%D0%B0%D1%80%D0%B8%D0%BB%D0%BE-333974290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
                     <img src="./assets/linkedin.svg" alt="Linkedin" width="40px" height="40px"  style="color:white;"></img>
