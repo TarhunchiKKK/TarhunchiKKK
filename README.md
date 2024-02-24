@@ -137,7 +137,7 @@
                 <a style="width:35px;height:35px;border:1px solid black;border-radius:4px;display:flex;justify-content:center;align-items:center;background-color:#fff;" target="_blank" href="https://www.instagram.com/_tarhunchick_/">
                     <img src="./assets/instagram.svg" alt="Instagram" width="40px" height="40px" style="color:white;"></img>
                 </a>
-                <a style="width:35px;height:35px;border:1px solid black;border-radius:4px;display:flex;justify-content:center;align-items:center;background-color:#fff;" target="_blank" href="https://github.com/TarhunchiKKK">
+                <a style="width:35px;height:35px;color:white;border:1px solid black;border-radius:4px;display:flex;justify-content:center;align-items:center;background-color:#fff;" target="_blank" href="https://github.com/TarhunchiKKK">
                     <img src="./assets/github.svg" alt="GitHub" width="40px" height="40px" style="color:white;"></img>
                 </a>
             </div>
