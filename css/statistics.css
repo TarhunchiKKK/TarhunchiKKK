@@ -1,0 +1,10 @@
+.statistics {
+    padding: 20px 0;
+}
+
+.statistics-wrapper {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
