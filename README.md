@@ -18,8 +18,7 @@
 
   ### :man_technologist: About Me :
   I am a Ful-Stack Developer.
-  - :student: student of BSUIR
-  - :zap: developing projects by JAvaScript/TypeScript
-  - :mountain_bicyclist: in my free time, like to play sports
-  - :mailbox: how to reach me: *kostabarilo12@gmail.com*
-  ---
+  - 🎓 graduate of BSUIR
+  - ⚡ developing projects by JavaScript/TypeScript
+  - 🏅 calisthenics fan
+  - 📧 how to reach me: *kostabarilo12@gmail.com*
