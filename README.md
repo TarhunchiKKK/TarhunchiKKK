@@ -32,5 +32,5 @@ I am a Full-Stack Developer.
   <img src="https://skillicons.dev/icons?i=bun,nest,rxjs,react,next" />
   <img src="https://skillicons.dev/icons?i=tailwind,redux,vite,vitest" />
   <img src="https://skillicons.dev/icons?i=docker,postgres,mongo,redis,rabbitmq" />
-  <img src="https://skillicons.dev/icons?i=linux,postman,figma,git,vscode" />
+  <img src="https://skillicons.dev/icons?i=git,vscode,postman,figma,linux" />
 </div>
