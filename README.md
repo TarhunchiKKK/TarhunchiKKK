@@ -16,9 +16,21 @@
   </h1>  
 </div>
 
-  ### :man_technologist: About Me :
-  I am a Full-Stack Developer.
-  - 🎓 graduate of BSUIR
-  - ⚡ developing projects by JavaScript/TypeScript
-  - 🏅 calisthenics fan
-  - 📧 how to reach me: *kostabarilo12@gmail.com*
+### 😉 About Me 
+
+I am a Full-Stack Developer.
+- 🎓 graduate of BSUIR
+- ⚡ developing projects by JavaScript/TypeScript
+- 🏅 calisthenics fan
+- 📧 how to reach me: *kostabarilo12@gmail.com*
+
+
+### 🛠️ Languages & Tools I Use
+
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=html,css,js,ts,nodejs" />
+  <img src="https://skillicons.dev/icons?i=bun,nest,rxjs,react,next" />
+  <img src="https://skillicons.dev/icons?i=tailwind,redux,vite,vitest" />
+  <img src="https://skillicons.dev/icons?i=docker,postgres,mongo,redis,rabbitmq" />
+  <img src="https://skillicons.dev/icons?i=linux,postman,figma,git,vscode" />
+</div>
