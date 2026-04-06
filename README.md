@@ -17,7 +17,7 @@
 </div>
 
   ### :man_technologist: About Me :
-  I am a Ful-Stack Developer.
+  I am a Full-Stack Developer.
   - 🎓 graduate of BSUIR
   - ⚡ developing projects by JavaScript/TypeScript
   - 🏅 calisthenics fan
