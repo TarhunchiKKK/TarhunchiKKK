@@ -16,4 +16,10 @@
   </h1>  
 </div>
 
-
+  ### :man_technologist: About Me :
+  I am a Ful-Stack Developer.
+  - :student: student of BSUIR
+  - :zap: developing projects by JAvaScript/TypeScript
+  - :mountain_bicyclist: in my free time, like to play sports
+  - :mailbox: how to reach me: *kostabarilo12@gmail.com*
+  ---
