@@ -57,3 +57,18 @@ I am a Full-Stack Developer.
   </table>
 </div>
 
+### 🍓 Featured Pet Project
+
+**Calypso** — Virtual whiteboard tool that lets you easily sketch diagrams (copy of [Miro](https://miro-landing.vercel.app/) board editor).
+
+- **🛠️ Tech Stack:** TypeScript, React, TailwindCSS, NestJS, Microservices
+- **🎨 Key Features:**
+  - Multiple node types: stickers, arrows, text nodes, shapes, medias, formattable documents and drawings
+  - Multiple node actions: dragging, resizing, editing, styling, etc.
+  - Arrows binding (even when related nodes are moving or resizing)
+  - Canellation (Undo/Redo) and exchange buffer (Copy/Paste/Cut)
+  - Window shifting and zooming
+- **🧪 Challenge:** No state managers and drag-n-drop libraries
+- **🏗️ Status:** 🛠 In Development / ✅ Ready
+
+[👉 View Code](https://github.com/TarhunchiKKK/calypso)
