@@ -59,7 +59,7 @@ I am a Full-Stack Developer.
 
 ### 🍓 Featured Pet Project
 
-**Calypso** — Virtual whiteboard tool that lets you easily sketch diagrams (copy of [Miro](https://miro-landing.vercel.app/) board editor).
+**Calypso** — Virtual whiteboard tool that lets you easily sketch diagrams (clone of [Miro](https://miro-landing.vercel.app/) board editor).
 
 - **🛠️ Tech Stack:** TypeScript, React, TailwindCSS, NestJS, Microservices
 - **🎨 Key Features:**
