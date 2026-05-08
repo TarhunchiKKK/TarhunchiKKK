@@ -67,7 +67,7 @@ I am a Full-Stack Developer.
   - Multiple node actions: dragging, resizing, editing, styling, etc.
   - Arrows binding (even when related nodes are moving or resizing)
   - Cancellation (Undo/Redo) and exchange buffer (Copy/Paste/Cut)
-  - Window shifting and zooming
+  - Window shifting and zooming, endless board
 - **🧪 Challenge:** No state managers and drag-n-drop libraries
 - **🏗️ Status:** 🛠 In Development / ✅ Ready
 
