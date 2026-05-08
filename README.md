@@ -12,7 +12,7 @@
       <img src="https://img.shields.io/badge/Twitter-black?style=for-the-badge&logo=x&logoColor=white&lfbel=twitter" alt="X Badge"/>
     </a>
     <a href="https://t.me/kostianchick">
-      <img src="https://img.shields.io/badge/Telegram-blue?style=for-the-badge&logo=telegram&logoColor=white" alt=Telegram Badge"/>
+      <img src="https://img.shields.io/badge/Telegram-blue?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram Badge"/>
     </a>
   </div>
   </h1>  
@@ -66,7 +66,7 @@ I am a Full-Stack Developer.
   - Multiple node types: stickers, arrows, text nodes, shapes, medias, formattable documents and drawings
   - Multiple node actions: dragging, resizing, editing, styling, etc.
   - Arrows binding (even when related nodes are moving or resizing)
-  - Canellation (Undo/Redo) and exchange buffer (Copy/Paste/Cut)
+  - Cancellation (Undo/Redo) and exchange buffer (Copy/Paste/Cut)
   - Window shifting and zooming
 - **🧪 Challenge:** No state managers and drag-n-drop libraries
 - **🏗️ Status:** 🛠 In Development / ✅ Ready
