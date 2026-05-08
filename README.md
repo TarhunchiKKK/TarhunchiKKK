@@ -36,3 +36,24 @@ I am a Full-Stack Developer.
   <img src="https://skillicons.dev/icons?i=docker,postgres,mongo,redis,rabbitmq" />
   <img src="https://skillicons.dev/icons?i=git,vscode,postman,figma,linux" />
 </div>
+
+### 📊 GitHub Stats
+
+<div align="center">
+  <table>
+    <tr>
+      <td>
+        <img src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=TarhunchiKKK&theme=transparent" alt="Stats" />
+      </td>
+      <td>
+        <img src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=TarhunchiKKK&theme=transparent" alt="Stats" />
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=TarhunchiKKK&theme=transparent" alt="Stats" />
+      </td>
+    </tr>
+  </table>
+</div>
+
