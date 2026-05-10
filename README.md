@@ -37,7 +37,7 @@ I am a Full-Stack Developer.
   <img src="https://skillicons.dev/icons?i=git,vscode,postman,figma,linux" />
 </div>
 
-### 📊 GitHub Stats
+<!--### 📊 GitHub Stats
 
 <div align="center">
   <table>
@@ -55,7 +55,7 @@ I am a Full-Stack Developer.
       </td>
     </tr>
   </table>
-</div>
+</div>-->
 
 ### 🍓 Featured Pet Project
 
