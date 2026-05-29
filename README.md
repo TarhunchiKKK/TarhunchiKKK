@@ -57,7 +57,7 @@ I am a Full-Stack Developer.
   </table>
 </div>-->
 
-### 🍓 Featured Pet Project
+### 🍓 Featured Pet-Project
 
 **Calypso** — Virtual whiteboard tool that lets you easily sketch diagrams (clone of [Miro](https://miro-landing.vercel.app/) board editor).
 
