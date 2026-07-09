@@ -25,6 +25,7 @@ I am a Full-Stack Developer.
 - ⚡ developing projects by JavaScript/TypeScript
 - 🏅 calisthenics fan
 - 📧 how to reach me: *kostabarilo12@gmail.com*
+- 📃 [CV](./CV.pdf)
 
 
 ### 🛠️ Languages & Tools I Use
