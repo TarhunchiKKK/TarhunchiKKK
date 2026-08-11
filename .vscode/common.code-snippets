@@ -1,0 +1,14 @@
+{
+    "Add 'private' and 'readonly' modifiers": {
+        "scope": "typescript",
+        "prefix": "p-r",
+        "description": "Adds 'private' and 'readonly' modifiers to class member",
+        "body": "private readonly $1"
+    },
+    "Add constructor declaration": {
+        "scope": "typescript",
+        "prefix": "p-c",
+        "description": "Adds constructor declaration",
+        "body": "public constructor($1) {}"
+    },
+}

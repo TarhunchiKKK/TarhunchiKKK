@@ -1,0 +1,41 @@
+{
+    "Debug Component": {
+        "scope": "typescript",
+        "prefix": "r-debug",
+        "body": [
+            "console.log(\"[$1]: render\")",
+            "",
+            "useEffect(() => {",
+            "   console.log(\"[$1]: mount\")",
+            "",
+            "   return () => {",
+            "       console.log(\"[$1]: unmount\")",
+            "   };",
+            "}, [])"
+        ]
+    },
+
+    // Storybook
+
+    "Create story": {
+        "scope": "typescript",
+        "prefix": "r-story",
+        "body": [
+            "import type { Meta, StoryObj } from \"@storybook/react-vite\";",
+            "import { centered } from \"#/lib/decorators\";",
+            "",
+            "const meta = {",
+            "    title: \"TYPE_PATH_HERE/$1\",",
+            "    component: $1",
+            "} satisfies Meta<typeof $1>;",
+            "",
+            "export default meta;",
+            "",
+            "type Story = StoryObj<typeof meta>;",
+            "",
+            "export const Default: Story = {",
+            "    decorators: centered",
+            "};"
+        ]
+    }
+}

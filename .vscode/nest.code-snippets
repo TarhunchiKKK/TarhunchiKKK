@@ -1,0 +1,249 @@
+{
+    // Common
+    "Create `Logger` class member": {
+        "scope": "typescript",
+        "prefix": "n-logger",
+        "body": "private readonly logger = new Logger($1);"
+    },
+    "Inject `ConfigService` provider": {
+        "scope": "typescript",
+        "prefix": "n-inject-config",
+        "body": "@Inject(ConfigService) private readonly configService: ConfigService"
+    },
+    "Inject `JwtService` provider": {
+        "scope": "typescript",
+        "prefix": "n-inject-jwt",
+        "body": "@Inject(JwtService) private readonly jwtService: JwtService"
+    },
+
+    // CQRS
+
+    "Add buses to constructor": {
+        "scope": "typescript",
+        "prefix": "n-cqrs-buses",
+        "body": "@Inject(CommandBus) private readonly commandBus: CommandBus, @Inject(QueryBus) private readonly queryBus: QueryBus"
+    },
+    "Create CQRS command": {
+        "scope": "typescript",
+        "prefix": "n-cqrs-cmd",
+        "body": [
+            "import { Command, CommandHandler, ICommandHandler } from \"@nestjs/cqrs\";",
+            "",
+            "export class $1Command extends Command<void> {",
+            "    public constructor(public dto: $1Dto) {",
+            "        super()",
+            "    }",
+            "}",
+            "",
+            "@CommandHandler($1Command)",
+            "export class $1CommandHandler implements ICommandHandler<$1Command> {",
+            "    public constructor() {}",
+            "",
+            "    public async execute({ dto }: $1Command) {",
+            "        ",
+            "    }",
+            "}"
+        ]
+    },
+    "Create query": {
+        "scope": "typescript",
+        "prefix": "n-cqrs-query",
+        "body": [
+            "import { Query, IQueryHandler, QueryHandler } from \"@nestjs/cqrs\";",
+            "",
+            "export class $1Query extends Query<void> {",
+            "    public constructor(public dto: $1Dto) {",
+            "        super()",
+            "    }",
+            "}",
+            "",
+            "@QueryHandler($1Query)",
+            "export class $1QueryHandler implements IQueryHandler<$1Query> {",
+            "    public constructor() {}",
+            "",
+            "    public async execute({ dto }: $1Query) {",
+            "        ",
+            "    }",
+            "}"
+        ]
+    },
+
+    // TypeORM
+
+    "Create typeorm entity": {
+        "scope": "typescript",
+        "prefix": "n-typeorm-entity",
+        "body": ["import { Entity, Column } from \"typeorm\"", "", "@Entity()", "export class $1 {", "    ", "}"]
+    },
+    "Inject TypeORM Repository": {
+        "scope": "typescript",
+        "prefix": "n-typeorm-dep",
+        "body": "@InjectRepository() private readonly $1Repository: Repository<$1>"
+    },
+    "Add TypeORM feature module": {
+        "scope": "typescript",
+        "prefix": "n-typeorm-feature",
+        "body": "TypeOrmModule.forFeature([$1])"
+    },
+
+    // Mongoose
+
+    "Create mongoose schema": {
+        "scope": "typescript",
+        "prefix": "n-mongoose-schema",
+        "body": [
+            "import { Prop, Schema, SchemaFactory } from \"@nestjs/mongoose\";",
+            "",
+            "@Schema()",
+            "export class $1 {",
+            "    ",
+            "}",
+            "",
+            "export const $1Schema = SchemaFactory.createForClass($1);"
+        ]
+    },
+    "Inject Mongoose Model": {
+        "scope": "typescript",
+        "prefix": "n-mongoose-dep",
+        "body": "@InjectModel($1.name) private $1Model: Model<$1>"
+    },
+    "Add Mongoose feature module": {
+        "scope": "typescript",
+        "prefix": "n-mongoose-feature",
+        "body": "MongooseModule.forFeature([{ name: $1.name, schema: $1Schema }])"
+    },
+
+    "Create processor": {
+        "scope": "typescript",
+        "prefix": "n-bullmq-processor",
+        "description": "Creates Nest.js jobs processor",
+        "body": [
+            "import { Processor, WorkerHost } from \"@nestjs/bullmq\";",
+            "import { Job } from \"bullmq\";",
+            "import { CommandBus } from \"@nestjs/cqrs\";",
+            "import { assertNever } from \"@repo/api\";",
+            "",
+            "@Processor(QUEUE_NAME)",
+            "export class $1Processor extends WorkerHost {",
+            "    public constructor(private readonly commandBus: CommandBus) {",
+            "        super();",
+            "    }",
+            "",
+            "    public async process(job: Job<any, any, $1QueueJobs>) {",
+            "        switch (job.name) {",
+            "            default:",
+            "                assertNever(job.name);",
+            "        }",
+            "    }",
+            "}"
+        ]
+    },
+
+    // GraphQL
+
+    "Create input": {
+        "scope": "typescript",
+        "prefix": "n-gql-input",
+        "description": "Creates Nest.js GraphQL input",
+        "body": [
+            "import { InputType, Field } from \"@nestjs/graphql\";",
+            "import { I$1Input } from \"@repo/api\";",
+            "",
+            "@InputType()",
+            "export class $1Input implements I$1Input {",
+            "    ",
+            "}"
+        ]
+    },
+    "Create model": {
+        "scope": "typescript",
+        "prefix": "n-gql-model",
+        "description": "Creates Nest.js GraphQL model",
+        "body": [
+            "import { ObjectType, Field } from \"@nestjs/graphql\";",
+            "import { I$1Model } from \"@repo/api\";",
+            "",
+            "@ObjectType()",
+            "export class $1Model implements I$1Model {",
+            "    ",
+            "}"
+        ]
+    },
+
+    // Decorators
+    "Add @Authorized()": {
+        "scope": "typescript",
+        "prefix": "n-auth",
+        "description": "Adds @Authorized() decorator to endpoint parameters",
+        "body": "@Authorized(\"id\") userId: string"
+    },
+
+    // Tests
+
+    "NestJS Bun Unit-Test": {
+        "prefix": "t-unit",
+        "scope": "typescript",
+        "body": [
+            "import { afterEach, beforeEach, describe, it, expect } from \"bun:test\";",
+            "import { Test } from \"@nestjs/testing\";",
+            "",
+            "describe(\"$1\", () => {",
+            "    let executor: $1;",
+            "",
+            "    beforeEach(async () => {",
+            "        const module = await Test.createTestingModule({",
+            "            providers: [",
+            "                $1",
+            "            ]",
+            "        }).compile();",
+            "",
+            "        executor = module.get($1);",
+            "    });",
+            "",
+            "    afterEach(() => {",
+            "        // clearMock();",
+            "    });",
+            "",
+            "    it(\"\", async () => {",
+            "        $0",
+            "    });",
+            "});"
+        ]
+    },
+    "NestJS Bun E2e-Test": {
+        "prefix": "t-e2e",
+        "scope": "typescript",
+        "body": [
+            "import { afterAll, beforeAll, describe, it } from \"bun:test\";",
+            "import type { INestApplication } from \"@nestjs/common\";",
+            "import { Test } from \"@nestjs/testing\";",
+            "import request from \"supertest\";",
+            "",
+            "describe(\"${1:Description} (e2e)\", () => {",
+            "   let app: INestApplication;",
+            "",
+            "    beforeAll(async () => {",
+            "        const module = await Test.createTestingModule({",
+            "            imports: [AppModule]",
+            "        }).compile();",
+            "",
+            "       app = module.createNestApplication();",
+            "       await app.init();",
+            "    });",
+            "",
+            "    afterAll(() => {",
+            "        app.close();",
+            "    });",
+            "",
+            "    it(\"\", () => {",
+            "         return request(app.getHttpServer()).get(\"/\").expect(200).expect(null);",
+            "    });",
+            "});"
+        ]
+    },
+    "NestJS Bun Mock": {
+        "prefix": "t-mock",
+        "scope": "typescript",
+        "body": ["mock<${1:Type}>((() => {}) as any)"]
+    }
+}
