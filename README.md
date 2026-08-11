@@ -38,6 +38,10 @@ I am a Full-Stack Developer.
   <img src="https://skillicons.dev/icons?i=git,vscode,postman,figma,linux" />
 </div>
 
+<!--  -->
+<!-- Giutub Stats -------------------------------->
+<!--  -->
+
 <!--### 📊 GitHub Stats
 
 <div align="center">
@@ -58,6 +62,40 @@ I am a Full-Stack Developer.
   </table>
 </div>-->
 
+### 🍓 My Custom Library
+
+[nestjs-multi-limiter](https://www.npmjs.com/package/nestjs-multi-limiter) - production-grade, race-condition safe rate limiting module for the [NestJS](https://nestjs.com/) framework (Node.js). 
+
+<p align="center">
+    <a href="https://www.npmjs.com/package/nestjs-multi-limiter">
+        <img src="https://img.shields.io/npm/v/nestjs-multi-limiter.svg" alt="NPM Version" />
+    </a>
+    <a href="https://www.npmjs.com/package/nestjs-multi-limiter">
+        <img src="https://img.shields.io/npm/l/nestjs-multi-limiter.svg" alt="Package License" />
+    </a>
+    <a href="https://www.npmjs.com/package/nestjs-multi-limiter">
+        <img src="https://img.shields.io/npm/dm/nestjs-multi-limiter.svg" alt="NPM Downloads" />
+    </a>
+</p>
+
+- **🛠️ Tech Stack:** TypeScript, NestJS, reflect-metadata, Redis, @nestjs/testing, Bun Test Runner, GitHub Actions, Turborepo, Biome
+- **🎨 Key Features:**
+  - **Multiple Algorithms:** Fixed Window, Token Bucket, Sliding Window Counter, Sliding Window Log, and Leaky Bucket
+  - **Dynamic Configuration:** Configure limits at runtime (on the fly per request context)
+  - **Race-Condition Safe:** Powered by custom Lua scripts to prevent race conditions in multi-instance deployments
+  - **Driver-Agnostic Storage:** Redis storage layer decoupled from specific npm packages (like `ioredis` or `node-redis`)
+  - **High Customization:** Ability to create custom key providers and error factories
+  - **Memory Efficiency:** Background cleanup mechanism to track and delete dead records when using in-memory storage
+- **🏗️ Status:** 🛠️ In Development / ✅ Ready
+
+[👉 View Code](https://github.com/TarhunchiKKK/nestjs-multi-limiter)
+
+
+<!--  -->
+<!-- Calypso -------------------------------->
+<!--  -->
+
+<!-- 
 ### 🍓 Featured Pet-Project
 
 **Calypso** — Virtual whiteboard tool that lets you easily sketch diagrams (clone of [Miro](https://miro-landing.vercel.app/) board editor).
@@ -72,4 +110,4 @@ I am a Full-Stack Developer.
 - **🧪 Challenge:** No state managers and drag-n-drop libraries
 - **🏗️ Status:** 🛠 In Development / ✅ Ready
 
-[👉 View Code](https://github.com/TarhunchiKKK/calypso)
+[👉 View Code](https://github.com/TarhunchiKKK/calypso) -->
