@@ -67,28 +67,24 @@ I am a Full-Stack Developer.
 [nestjs-multi-limiter](https://www.npmjs.com/package/nestjs-multi-limiter) - production-grade, race-condition safe rate limiting module for the [NestJS](https://nestjs.com/) framework (Node.js). 
 
 <p align="center">
-    <a href="https://www.npmjs.com/package/nestjs-multi-limiter">
-        <img src="https://img.shields.io/npm/v/nestjs-multi-limiter.svg" alt="NPM Version" />
-    </a>
-    <a href="https://www.npmjs.com/package/nestjs-multi-limiter">
-        <img src="https://img.shields.io/npm/l/nestjs-multi-limiter.svg" alt="Package License" />
-    </a>
-    <a href="https://www.npmjs.com/package/nestjs-multi-limiter">
-        <img src="https://img.shields.io/npm/dm/nestjs-multi-limiter.svg" alt="NPM Downloads" />
-    </a>
+<a href="https://github.com/tarhunchikkk/nestjs-multi-limiter/actions/workflows/ci.yml"><img src="https://github.com/tarhunchikkk/nestjs-multi-limiter/actions/workflows/ci.yml/badge.svg" alt="CI" /></a>
+<a href="https://github.com/tarhunchikkk/nestjs-multi-limiter/actions/workflows/e2e.yml"><img src="https://github.com/tarhunchikkk/nestjs-multi-limiter/actions/workflows/e2e.yml/badge.svg" alt="E2e" /></a>
+<a href="https://github.com/tarhunchikkk/nestjs-multi-limiter/actions/workflows/codeql-analysis.yml"><img src="https://github.com/tarhunchikkk/nestjs-multi-limiter/actions/workflows/codeql-analysis.yml/badge.svg" alt="CodeQL Analysis" /></a>
+<a href="https://biomejs.dev/"><img src="https://img.shields.io/badge/code_style-XO-60a5fa.svg" alt="Code Style" /></a>
+<a href="https://biomejs.dev/"><img src="https://img.shields.io/badge/styled_with-Biome-60a5fa.svg" alt="Formatter" /></a>
+<a href="https://www.npmjs.com/package/nestjs-multi-limiter"><img src="https://img.shields.io/npm/l/nestjs-multi-limiter.svg" alt="Package License" /></a>
 </p>
 
-- **🛠️ Tech Stack:** TypeScript, NestJS, reflect-metadata, Redis, @nestjs/testing, Bun Test Runner, GitHub Actions, Turborepo, Biome
+- **🛠️ Tech Stack:** TypeScript, NestJS, reflect-metadata, Redis, Lua, Bun Test Runner, GitHub Actions, Turborepo, Biome
 - **🎨 Key Features:**
-  - **Multiple Algorithms:** Fixed Window, Token Bucket, Sliding Window Counter, Sliding Window Log, and Leaky Bucket
-  - **Dynamic Configuration:** Configure limits at runtime (on the fly per request context)
-  - **Race-Condition Safe:** Powered by custom Lua scripts to prevent race conditions in multi-instance deployments
-  - **Driver-Agnostic Storage:** Redis storage layer decoupled from specific npm packages (like `ioredis` or `node-redis`)
-  - **High Customization:** Ability to create custom key providers and error factories
-  - **Memory Efficiency:** Background cleanup mechanism to track and delete dead records when using in-memory storage
+  - **5 Core Algorithms**: _Fixed Window_, _Token Bucket_, _Sliding Window Counter_, _Sliding Window Log_ and _Leaky Bucket_.
+  - **Runtime Configuration:** The system of options factories allows dynamically configure limits at runtime per request context (e.g., based on JWT user roles or pricing tiers).
+  - **Driver-Agnostic Storage:** Redis integration is completely decoupled from specific npm packages (like `ioredis` or `node-redis`).   
+  - **Race-Condition Safe**: Powered Redis storage by execution <a href="https://www.lua.org/">Lua</a> scripts, preventing race conditions in multi-instant deployments.
+  - **Protocol Agnosticism:** Ability to implement custom key extractors and error factories allows you to integrate the library with any protocol.
 - **🏗️ Status:** 🛠️ In Development / ✅ Ready
 
-[👉 View Code](https://github.com/TarhunchiKKK/nestjs-multi-limiter)
+[👉 See Repo](https://github.com/TarhunchiKKK/nestjs-multi-limiter)
 
 
 <!--  -->
