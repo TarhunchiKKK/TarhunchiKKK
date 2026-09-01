@@ -81,8 +81,10 @@ I am a Full-Stack Developer.
   - **Runtime Configuration:** The system of options factories allows dynamically configure limits at runtime per request context (e.g., based on JWT user roles or pricing tiers).
   - **Driver-Agnostic Storage:** Redis integration is completely decoupled from specific npm packages (like `ioredis` or `node-redis`).   
   - **Race-Condition Safe**: Powered Redis storage by execution <a href="https://www.lua.org/">Lua</a> scripts, preventing race conditions in multi-instant deployments.
+  - **Redis Failure Handling:** _Fail-Open_, _Fail-Close_ and _Fail-Fast_ strategies
   - **Protocol Agnosticism:** Ability to implement custom key extractors and error factories allows you to integrate the library with any protocol.
-- **🏗️ Status:** 🛠️ In Development / ✅ Ready
+  - **Swagger Integration:** Native integration with [@nestjs/swagger](https://www.npmjs.com/package/@nestjs/swagger) pacakge with ability to customize metadata in Swagger docs.
+- **🏗️ Status:** ✅ Ready
 
 [👉 See Repo](https://github.com/TarhunchiKKK/nestjs-multi-limiter)
 
