@@ -22,7 +22,7 @@
 
 I am a Full-Stack Developer.
 - 🎓 graduate of BSUIR
-- ⚡ developing projects by JavaScript/TypeScript
+- ⚡ 1,5+ years of full-stack engineering experience
 - 🏅 calisthenics fan
 - 📧 how to reach me: *kostabarilo12@gmail.com*
 - 📃 [CV](./CV.pdf)
