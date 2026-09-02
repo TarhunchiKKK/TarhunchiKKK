@@ -64,7 +64,7 @@ I am a Full-Stack Developer.
 
 ### 🍓 My Custom Library
 
-[nestjs-multi-limiter](https://www.npmjs.com/package/nestjs-multi-limiter) - production-grade, race-condition safe rate limiting module for the [NestJS](https://nestjs.com/) framework (Node.js). 
+[nestjs-multi-limiter](https://www.npmjs.com/package/nestjs-multi-limiter) - protocol-agnostic, race-condition safe, and extensible rate limiter module for <a href="http://nestjs.com/">NestJS</a> framework (Node.js).
 
 <p align="center">
 <a href="https://github.com/tarhunchikkk/nestjs-multi-limiter/actions/workflows/ci.yml"><img src="https://github.com/tarhunchikkk/nestjs-multi-limiter/actions/workflows/ci.yml/badge.svg" alt="CI" /></a>
