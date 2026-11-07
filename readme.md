@@ -25,7 +25,7 @@ I am a Full-Stack Developer.
 - ⚡ 1,5+ years of full-stack engineering experience
 - 🏅 calisthenics fan
 - 📧 how to reach me: *kostabarilo12@gmail.com*
-- 📃 [CV](./CV.pdf)
+- 📃 [CV](./cv.pdf)
 
 
 ### 🛠️ Languages & Tools I Use

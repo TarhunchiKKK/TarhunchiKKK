@@ -1,0 +1,66 @@
+[
+	{
+		"key": "ctrl+s",
+		"command": "workbench.action.files.saveAll"
+	},
+	{
+		"key": "ctrl+.",
+		"command": "-notebook.cell.openFailureActions",
+		"when": "notebookCellFocused && notebookCellHasErrorDiagnostics && !notebookCellEditorFocused"
+	},
+	{
+		"key": "ctrl+.",
+		"command": "-acceptSelectedCodeAction",
+		"when": "codeActionMenuVisible"
+	},
+	{
+		"key": "ctrl+.",
+		"command": "-editor.changePasteType",
+		"when": "pasteWidgetVisible"
+	},
+	{
+		"key": "ctrl+.",
+		"command": "-editor.changeDropType",
+		"when": "dropWidgetVisible"
+	},
+	{
+		"key": "ctrl+.",
+		"command": "-problems.action.showQuickFixes",
+		"when": "problemFocus"
+	},
+	{
+		"key": "ctrl+.",
+		"command": "-workbench.action.terminal.showQuickFixes",
+		"when": "terminalFocus"
+	},
+	{
+		"key": "ctrl+.",
+		"command": "editor.action.quickFix",
+		"when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
+	},
+	{
+		"key": "ctrl+.",
+		"command": "-editor.action.quickFix",
+		"when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
+	},
+	{
+		"key": "ctrl+alt+meta+n",
+		"command": "-welcome.showNewFileEntries"
+	},
+	{
+		"key": "ctrl+alt+n",
+		"command": "explorer.newFolder"
+	},
+	{
+		"key": "ctrl+n",
+		"command": "-workbench.action.files.newUntitledFile"
+	},
+	{
+		"key": "ctrl+n",
+		"command": "explorer.newFile"
+	},
+	{
+		"key": "ctrl+shift+t",
+		"command": "workbench.view.extension.todo-tree-container"
+	}
+]

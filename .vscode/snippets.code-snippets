@@ -1,0 +1,535 @@
+{
+	// 💡 Common code snippets
+    "Add 'private' and 'readonly' modifiers": {
+        "scope": "typescript",
+        "prefix": "c-pr",
+        "body": "private readonly $1"
+    },
+    "Add constructor declaration": {
+        "scope": "typescript",
+        "prefix": "c-constructor",
+        "body": "public constructor($1) {}"
+    },
+    "Create class": {
+        "scope": "typescript",
+        "prefix": "c-class",
+        "body": [
+            "export class $1 {",
+            "   $2",
+            "}"
+        ]
+    },
+    "Create `switch` statement": {
+        "scope": "typescript",
+        "prefix": "c-switch",
+        "body": [
+            "switch($1) {",
+            "case $2:",
+            "   break;",
+            "default:",
+            "   throw new Error(\"Unexpected case\");",
+            "}"
+        ]
+    },
+    "Create `for` cycle": {
+        "scope": "typescript",
+        "prefix": "c-for",
+        "body": [
+            "for (let i = 0; i < $1.length; i++) {",
+            "   $2",
+            "}"
+        ]
+    },
+    "Create zod object schema": {
+        "scope": "typescript",
+        "prefix": "z-object",
+        "body": [
+            "const $1Schema = z.object({",
+            "   $2",
+            "});",
+            "",
+            "export type $1 = z.infer<typeof $1Schema>;"
+        ]
+    },
+	//
+	// -------------------------------------------------------------------------------------------------------------------------------------------------------------
+	// 💡 NestJS code snippets
+    // Common
+    "Create `Logger` class member": {
+        "scope": "typescript",
+        "prefix": "n-logger",
+        "body": "private readonly logger = new Logger($1);"
+    },
+    "Create injection": {
+        "scope": "typescript",
+        "prefix": "n-inject",
+        "body": "@Inject($1) private readonly $1: $1"
+    },
+    "Inject `ConfigService` provider": {
+        "scope": "typescript",
+        "prefix": "n-inject-config",
+        "body": "@Inject(ConfigService) private readonly configService: ConfigService"
+    },
+    "Inject `JwtService` provider": {
+        "scope": "typescript",
+        "prefix": "n-inject-jwt",
+        "body": "@Inject(JwtService) private readonly jwtService: JwtService"
+    },
+	//
+    // CQRS
+    "Add buses to constructor": {
+        "scope": "typescript",
+        "prefix": "n-cqrs-buses",
+        "body": "@Inject(CommandBus) private readonly commandBus: CommandBus, @Inject(QueryBus) private readonly queryBus: QueryBus"
+    },
+    "Create CQRS command": {
+        "scope": "typescript",
+        "prefix": "n-cqrs-cmd",
+        "body": [
+            "import { Command, CommandHandler, ICommandHandler } from \"@nestjs/cqrs\";",
+            "",
+            "export class $1Command extends Command<void> {",
+            "    public constructor(public dto: $1Dto) {",
+            "        super()",
+            "    }",
+            "}",
+            "",
+            "@CommandHandler($1Command)",
+            "export class $1CommandHandler implements ICommandHandler<$1Command> {",
+            "    public constructor() {}",
+            "",
+            "    public async execute({ dto }: $1Command) {",
+            "        ",
+            "    }",
+            "}"
+        ]
+    },
+    "Create query": {
+        "scope": "typescript",
+        "prefix": "n-cqrs-query",
+        "body": [
+            "import { Query, IQueryHandler, QueryHandler } from \"@nestjs/cqrs\";",
+            "",
+            "export class $1Query extends Query<void> {",
+            "    public constructor(public dto: $1Dto) {",
+            "        super()",
+            "    }",
+            "}",
+            "",
+            "@QueryHandler($1Query)",
+            "export class $1QueryHandler implements IQueryHandler<$1Query> {",
+            "    public constructor() {}",
+            "",
+            "    public async execute({ dto }: $1Query) {",
+            "        ",
+            "    }",
+            "}"
+        ]
+    },
+	//
+    // TypeORM
+    "Create typeorm entity": {
+        "scope": "typescript",
+        "prefix": "n-typeorm-entity",
+        "body": [
+            "import { Entity, Column } from \"typeorm\"",
+            "",
+            "@Entity()",
+            "export class $1 {",
+            "    ",
+            "}"
+        ]
+    },
+    "Inject TypeORM Repository": {
+        "scope": "typescript",
+        "prefix": "n-typeorm-dep",
+        "body": "@InjectRepository() private readonly $1Repository: Repository<$1>"
+    },
+    "Add TypeORM feature module": {
+        "scope": "typescript",
+        "prefix": "n-typeorm-feature",
+        "body": "TypeOrmModule.forFeature([$1])"
+    },
+	//
+    // Mongoose
+    "Create mongoose schema": {
+        "scope": "typescript",
+        "prefix": "n-mongoose-schema",
+        "body": [
+            "import { Prop, Schema, SchemaFactory } from \"@nestjs/mongoose\";",
+            "",
+            "@Schema()",
+            "export class $1 {",
+            "    ",
+            "}",
+            "",
+            "export const $1Schema = SchemaFactory.createForClass($1);"
+        ]
+    },
+    "Inject Mongoose Model": {
+        "scope": "typescript",
+        "prefix": "n-mongoose-dep",
+        "body": "@InjectModel($1.name) private $1Model: Model<$1>"
+    },
+    "Add Mongoose feature module": {
+        "scope": "typescript",
+        "prefix": "n-mongoose-feature",
+        "body": "MongooseModule.forFeature([{ name: $1.name, schema: $1Schema }])"
+    },
+    "Create processor": {
+        "scope": "typescript",
+        "prefix": "n-bullmq-processor",
+        "body": [
+            "import { Processor, WorkerHost } from \"@nestjs/bullmq\";",
+            "import { Job } from \"bullmq\";",
+            "import { CommandBus } from \"@nestjs/cqrs\";",
+            "import { assertNever } from \"@repo/api\";",
+            "",
+            "@Processor(QUEUE_NAME)",
+            "export class $1Processor extends WorkerHost {",
+            "    public constructor(private readonly commandBus: CommandBus) {",
+            "        super();",
+            "    }",
+            "",
+            "    public async process(job: Job<any, any, $1QueueJobs>) {",
+            "        switch (job.name) {",
+            "            default:",
+            "                assertNever(job.name);",
+            "        }",
+            "    }",
+            "}"
+        ]
+    },
+	//
+    // GraphQL
+    "Create input": {
+        "scope": "typescript",
+        "prefix": "n-gql-input",
+        "body": [
+            "import { InputType, Field } from \"@nestjs/graphql\";",
+            "import { I$1Input } from \"@repo/api\";",
+            "",
+            "@InputType()",
+            "export class $1Input implements I$1Input {",
+            "    ",
+            "}"
+        ]
+    },
+    "Create model": {
+        "scope": "typescript",
+        "prefix": "n-gql-model",
+        "body": [
+            "import { ObjectType, Field } from \"@nestjs/graphql\";",
+            "import { I$1Model } from \"@repo/api\";",
+            "",
+            "@ObjectType()",
+            "export class $1Model implements I$1Model {",
+            "    ",
+            "}"
+        ]
+    },
+	//
+    // Decorators
+    "Add @Authorized()": {
+        "scope": "typescript",
+        "prefix": "n-auth",
+        "body": "@Authorized(\"id\") userId: string"
+    },
+	//
+    // Tests
+    "NestJS Bun Unit-Test": {
+        "prefix": "n-spec-unit",
+        "scope": "typescript",
+        "body": [
+            "import { afterEach, beforeEach, describe, it, expect } from \"bun:test\";",
+            "import { Test } from \"@nestjs/testing\";",
+            "",
+            "describe(\"$1\", () => {",
+            "    let executor: $1;",
+            "",
+            "    beforeEach(async () => {",
+            "        const module = await Test.createTestingModule({",
+            "            providers: [",
+            "                $1",
+            "            ]",
+            "        }).compile();",
+            "",
+            "        executor = module.get($1);",
+            "    });",
+            "",
+            "    afterEach(() => {",
+            "        // clearMock();",
+            "    });",
+            "",
+            "    it(\"\", async () => {",
+            "        $0",
+            "    });",
+            "});"
+        ]
+    },
+    "NestJS Bun E2e-Test": {
+        "prefix": "n-spec-e2e",
+        "scope": "typescript",
+        "body": [
+            "import { afterAll, beforeAll, describe, it } from \"bun:test\";",
+            "import type { INestApplication } from \"@nestjs/common\";",
+            "import { Test } from \"@nestjs/testing\";",
+            "import request from \"supertest\";",
+            "",
+            "describe(\"$1 (e2e)\", () => {",
+            "   let app: INestApplication;",
+            "",
+            "    beforeAll(async () => {",
+            "        const module = await Test.createTestingModule({",
+            "            imports: [AppModule]",
+            "        }).compile();",
+            "",
+            "       app = module.createNestApplication();",
+            "       await app.init();",
+            "    });",
+            "",
+            "    afterAll(() => {",
+            "        app.close();",
+            "    });",
+            "",
+            "    it(\"\", () => {",
+            "         return request(app.getHttpServer()).get(\"/\").expect(200).expect(null);",
+            "    });",
+            "});"
+        ]
+    },
+	//
+	// -------------------------------------------------------------------------------------------------------------------------------------------------------------
+	// 💡 React code snippets
+	// Common
+    "Debug Component": {
+        "scope": "typescript",
+        "prefix": "r-debug",
+        "body": [
+            "console.log(\"[$1]: render\")",
+            "",
+            "useEffect(() => {",
+            "   console.log(\"[$1]: mount\")",
+            "",
+            "   return () => {",
+            "       console.log(\"[$1]: unmount\")",
+            "   };",
+            "}, []);"
+        ]
+    },
+    "Create component": {
+        "scope": "typescript",
+        "prefix": "r-fc",
+        "body": [
+            "type Props = {",
+            "   $2",
+            "};",
+            "",
+            "export function $1({ }: Props) {",
+            "",
+            "}"
+        ]
+    },
+    "Create context": {
+        "scope": "typescript",
+        "prefix": "r-context",
+        "body": [
+            "import { createContext, type PropsWithChildren } from \"react\";",
+            "",
+            "const $1Context = createConttext();",
+            "",
+            "export function $1Provider({ children }: PropsWithChildren) {",
+            "   return(",
+            "       <$1Context.Provider value={}>",
+            "           {children}",
+            "       </$1Context.Provider>",
+            "   )",
+            "}"
+        ]
+    },
+    "Call map method": {
+        "scope": "typescript",
+        "prefix": "r-jsx-map",
+        "body": [
+            "{$1.map(($2, index) => (",
+            "   <></>",
+            "))}"
+        ]
+    },
+	//
+    // Hooks
+    "Call useState hook": {
+        "scope": "typescript",
+        "prefix": "r-u-state",
+        "body": "const [$1, set$1] = useState($2);"
+    },
+    "Call useContext hook": {
+        "scope": "typescript",
+        "prefix": "r-u-context",
+        "body": "const { $2 } = useContext($1);"
+    },
+    "Call useEffect hook": {
+        "scope": "typescript",
+        "prefix": "r-u-effect",
+        "body": [
+            "useEffect(() => {",
+            "   $2",
+            "}, [$1]);"
+        ]
+    },
+    "Call useLayoutEffect hook": {
+        "scope": "typescript",
+        "prefix": "r-u-layout-effect",
+        "body": [
+            "useLayoutEffect(() => {",
+            "   $2",
+            "}, [$1]);"
+        ]
+    },
+    "Call useEffect-event hook": {
+        "scope": "typescript",
+        "prefix": "r-u-effect-event",
+        "body": [
+            "const $1 = useEffectEvent(() => {",
+            "   $2",
+            "});"
+        ]
+    },
+    "Call useMemo hook": {
+        "scope": "typescript",
+        "prefix": "r-u-memo",
+        "body": [
+            "const $1 = useMemo(() => {",
+            "   $3",
+            "}, [$2]);"
+        ]
+    },
+    "Call useCallback hook": {
+        "scope": "typescript",
+        "prefix": "r-u-callback",
+        "body": [
+            "const $1 = useCallback(() => {",
+            "   $3",
+            "}, [$2]);"
+        ]
+    },
+    "Call useRef hook": {
+        "scope": "typescript",
+        "prefix": "r-u-ref",
+        "body": "const $1Ref = useRef($2);"
+    },
+    "Call useImperativeHandle hook": {
+        "scope": "typescript",
+        "prefix": "r-u-imperative-handle",
+        "body": [
+            "useImperativeHandle(ref, () => {",
+            "   $2",
+            "}, [$1])"
+        ]
+    },
+    "Call useFormStatus hook": {
+        "scope": "typescript",
+        "prefix": "r-u-form-status",
+        "body": "const { pending, $1 } = useFormStatus();"
+    },
+    "Call useDeferredValue hook": {
+        "scope": "typescript",
+        "prefix": "r-u-deferred-value",
+        "body": "const $2 = useDeferredValue($1);"
+    },
+    "Call useTransition hook": {
+        "scope": "typescript",
+        "prefix": "r-u-transition",
+        "body": "const [is$1Pending, start$1] = useTransition();"
+    },
+	//
+    // React Hook Form
+    "Call useForm hook": {
+        "scope": "typescript",
+        "prefix": "r-hook-form",
+        "body": [
+            "const form = useForm({",
+            "   defaultValues: $1",
+            "});",
+            "",
+            "const onSubmit = form.handleSubmit(async (data) => {",
+            "   $2",
+            "});",
+            "",
+            "return (",
+            "   <form onSubmit={onSubmit}></form>",
+            ");"
+        ]
+    },
+    "Call useQuery hook": {
+        "scope": "typescript",
+        "prefix": "r-tanstack-query",
+        "body": [
+            "const { data } = useQuery({",
+            "   queryKey: [\"$1\"],",
+            "   queryFn: () => {",
+            "       $2",
+            "   }",
+            "});"
+        ]
+    },
+    "Call useMutation hook": {
+        "scope": "typescript",
+        "prefix": "r-tanstack-mutation",
+        "body": [
+            "const { mutate } = useMutation({",
+            "   mutationFn: () => {",
+            "       $1",
+            "   },",
+            "   onSuccess: () => {",
+            "       // TODO: Success handler",
+            "   }",
+            "});"
+        ]
+    },
+	//
+    // Redux Toolkit
+    "Create slice": {
+        "scope": "typescript",
+        "prefix": "r-redux-slice",
+        "body": [
+            "import { createSlice } from \"@reduxjs/toolkit\";",
+            "",
+            "export type $1State = {",
+            "   ",
+            "};",
+            "",
+            "const initialState: $1State = {",
+            "   ",
+            "};",
+            "export const $1Slice$2 = crewateSlice({",
+            "   name: \"$1$2\",",
+            "   initialState: initialState,",
+            "   reducers: {}",
+            "});"
+        ]
+    },
+	//
+    // Storybook
+    "Create story": {
+        "scope": "typescript",
+        "prefix": "r-story",
+        "body": [
+            "import type { Meta, StoryObj } from \"@storybook/react-vite\";",
+            "import { centered } from \"#/lib/decorators\";",
+            "",
+            "const meta = {",
+            "    title: \"TYPE_PATH_HERE/$1\",",
+            "    component: $1",
+            "} satisfies Meta<typeof $1>;",
+            "",
+            "export default meta;",
+            "",
+            "type Story = StoryObj<typeof meta>;",
+            "",
+            "export const Default: Story = {",
+            "    decorators: centered",
+            "};"
+        ]
+    }
+}

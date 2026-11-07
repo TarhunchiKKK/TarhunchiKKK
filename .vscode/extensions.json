@@ -1,0 +1,22 @@
+{
+	"recommendations": [
+		// UI
+		"thang-nm.flow-icons",
+		"usernamehw.errorlens",
+		"shalldie.background",
+		//
+		// Code style
+		"biomejs.biome",
+		"streetsidesoftware.code-spell-checker",
+		//
+		// Coding
+		"christian-kohler.path-intellisense",
+		"MylesMurphy.prettify-ts",
+		"wix.vscode-import-cost",
+		"fractalbrew.backticks",
+		//
+		// Tools
+		"FanaticPythoner.better-todo-tree",
+		"yzhang.markdown-all-in-one"
+	]
+}

@@ -1,0 +1,287 @@
+{
+	// 💡 Core settings
+	"editor.tabSize": 4,
+	"editor.insertSpaces": false,
+	"editor.detectIndentation": true,
+	//
+	// 💡 Minimalistic UI 
+	// Hide bars and panels 
+	"editor.glyphMargin": false,
+	"editor.minimap.enabled": false,
+	"editor.accessibilitySupport": "off",
+	"workbench.activityBar.location": "hidden",
+	"workbench.editor.editorActionsLocation": "hidden",
+	"workbench.editor.empty.hint": "hidden",
+	"workbench.statusBar.visible": false,
+	"workbench.panel.showLabels": false,
+	"window.commandCenter": false,
+	"workbench.layoutControl.enabled": false,
+	//
+	// Disable breadcrumps
+	"breadcrumbs.enabled": false,
+	//
+	// Tabs and editor limitations
+	"workbench.editor.highlightModifiedTabs": true,
+	"terminal.integrated.tabs.defaultIcon": "symbol-event",
+	"workbench.editor.limit.perEditorGroup": true,
+	"workbench.editor.limit.enabled": true,
+	"workbench.editor.limit.value": 5,
+	"workbench.editor.tabSizing": "shrink",
+	"window.density.editorTabHeight": "default",
+	//
+	// Scrolling
+	"editor.smoothScrolling": true,
+	"editor.scrollBeyondLastLine": true,
+	"editor.scrollbar.horizontal": "visible",
+	"editor.scrollbar.vertical": "visible",
+	"editor.stickyScroll.scrollWithEditor": false,
+	"workbench.tree.enableStickyScroll": false,
+	"editor.stickyScroll.enabled": true,
+	//
+	// Terminal settings
+	"terminal.integrated.fontFamily": "PragmataPro Liga",
+	"terminal.integrated.fontSize": 15,
+	"terminal.integrated.cursorStyle": "block",
+	"terminal.integrated.stickyScroll.enabled": false,
+	"terminal.integrated.cursorBlinking": true,
+	//
+	// Minimizing distracting elements during debugging
+	"debug.toolBarLocation": "hidden",
+	"debug.focusWindowOnBreak": false,
+	"debug.showInlineBreakpointCandidates": false,
+	"debug.showBreakpointsInOverviewRuler": false,
+	//
+	// 💡 Typography settings
+	// Themes
+	"workbench.colorTheme": "Dark+",
+	"workbench.iconTheme": "flow-deep",
+	//
+	// Cursor settings
+	"editor.cursorBlinking": "phase",
+	"editor.cursorStyle": "block",
+	"editor.cursorSmoothCaretAnimation": "explicit",
+	//
+	// Font setings
+	"editor.fontSize": 14,
+	"editor.lineHeight": 22.5,
+	"editor.fontLigatures": true,
+	"editor.fontFamily": "JetBrains Mono, PragmataPro Mono Liga, MonoLisa, Cascadia Code, SF Mono, Fira Code, Ubuntu Mono, monospace",
+	//
+	// Other fonts
+	"editor.inlayHints.fontFamily": "PragmataPro",
+	"chat.editor.fontFamily": "PragmataPro",
+	"editor.codeLensFontFamily": "PragmataPro",
+	"debug.console.fontFamily": "PragmataPro",
+	//
+	//
+	// 💡 Explorer settings
+	// Files management
+	"explorer.confirmDelete": false,
+	"explorer.confirmDragAndDrop": false,
+	"explorer.compactFolders": false,
+	"files.autoSave": "off",
+	//
+	// Files, excluded from view
+	"files.exclude": {
+		"**/.idea": true,
+		"**/.next": true,
+		"**/coverage": true,
+		"**/.turbo": true
+	},
+	//
+	// SVG associations
+	"workbench.editorAssociations": {
+		"*.svg": "default"
+	},
+	//
+	//
+	// 💡 Coding
+	// Code formatting
+	"editor.formatOnSave": true,
+	"editor.formatOnPaste": true,
+	"[jsonc]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	},
+	//
+	// Suggestions
+	"editor.suggestSelection": "first",
+	"editor.quickSuggestionsDelay": 100,
+	"editor.inlineSuggest.enabled": true,
+	"editor.quickSuggestions": {
+		"strings": "on"
+	},
+	//
+	//
+	// 💡 Languages settings
+	// Tags editing
+	"editor.linkedEditing": true,
+	"html.autoClosingTags": true,
+	"js/ts.autoClosingTags.enabled": true,
+	//
+	// JS / TS Settigns
+	"js/ts.updateImportsOnFileMove.enabled": "always",
+	"js/ts.preferences.quoteStyle": "single",
+	"js/ts.format.semicolons": "remove",
+	"js/ts.implicitProjectConfig.experimentalDecorators": true,
+	//
+	// Markdown settigns
+	"markdown.updateLinksOnFileMove.enabled": "always",
+	//
+	// Git settings
+	"git.openRepositoryInParentFolders": "never",
+	"git.confirmSync": false,
+	"git.enableSmartCommit": true,
+	//
+	// Syntax highlight
+	"editor.renderControlCharacters": false,
+	"editor.unicodeHighlight.ambiguousCharacters": false,
+	"editor.tokenColorCustomizations": {
+		"textMateRules": [
+			{
+				"scope": [
+					"comment",
+					"entity.name.type.class",
+					"keyword",
+					"constant",
+					"storage.modifier",
+					"storage.type.class.js",
+				],
+				"settings": {
+					"fontStyle": "italic"
+				}
+			},
+			{
+				"scope": [
+					"invalid",
+					"keyword.operator",
+					"constant.numeric.css",
+					"keyword.other.unit.px.css",
+					"constant.numeric.decimal.js",
+					"constant.numeric.json"
+				],
+				"settings": {
+					"fontStyle": ""
+				}
+			}
+		]
+	},
+	//
+	//
+	// 💡 Other settings
+	"files.defaultLanguage": "plaintext",
+	"diffEditor.ignoreTrimWhitespace": false,
+	"security.workspace.trust.untrustedFiles": "open",
+	"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+	"window.confirmBeforeClose": "keyboardOnly",
+	"editor.gotoLocation.multipleDefinitions": "goto",
+	"telemetry.telemetryLevel": "off",
+	//
+	//
+	// 💡 Extensions settings
+	// BiomeJS
+	"editor.defaultFormatter": "biomejs.biome",
+	"editor.codeActionsOnSave": {
+		"source.organizeImports": "explicit",
+		"source.fixAll.biome": "explicit",
+		"source.removeUnusedImports": "explicit"
+	},
+	//
+	// TailwindCSS
+	"tailwindCSS.classAttributes": [
+		"class",
+		"className",
+		"headerClassName"
+	],
+	"files.associations": {
+		"*.css": "tailwindcss"
+	},
+	//
+	// Spell checker
+	"cSpell.language": "en",
+	"cSpell.enabled": true,
+	"cSpell.autoFormatConfigFile": true,
+	//
+	// Todo Tree
+	"better-todo-tree.general.tags": [
+		"BUG",
+		"HACK",
+		"FIXME",
+		"RECHECK",
+		"INCOMPLETE",
+		"TODO",
+		"USEFUL",
+		"REFACTOR",
+		"DELETE",
+		"OPTIMIZE",
+		"DOC",
+		"WARN",
+		"QUESTION"
+	],
+	"better-todo-tree.highlights.customHighlight": {
+		"TODO": {
+			"icon": "checkbox",
+			"iconColour": "yellow",
+			"background": "yellow"
+		},
+		"USEFUL": {
+			"icon": "comment",
+			"iconColour": "mediumaquamarine",
+			"background": "mediumaquamarine"
+		},
+		"FIXME": {
+			"icon": "tools",
+			"iconColour": "burlywood",
+			"background": "burlywood"
+		},
+		"WARN": {
+			"icon": "alert",
+			"iconColour": "yellow",
+			"background": "yellow"
+		},
+		"RECHECK": {
+			"icon": "codescan",
+			"iconColour": "chocolate",
+			"background": "chocolate"
+		},
+		"INCOMPLETE": {
+			"icon": "beaker",
+			"iconColour": "aquamarine",
+			"background": "aquamarine"
+		},
+		"BUG": {
+			"icon": "bug",
+			"iconColour": "crimson",
+			"background": "crimson"
+		},
+		"REFACTOR": {
+			"icon": "code",
+			"iconColour": "mediumvioletred",
+			"background": "mediumvioletred"
+		},
+		"DELETE": {
+			"icon": "trash",
+			"iconColour": "crimson",
+			"background": "crimson"
+		},
+		"OPTIMIZE": {
+			"icon": "rocket",
+			"iconColour": "mediumaquamarine",
+			"background": "mediumaquamarine"
+		},
+		"DOC": {
+			"icon": "note",
+			"iconColour": "mediumvioletred",
+			"background": "mediumvioletred"
+		},
+		"QUESTION": {
+			"icon": "question",
+			"iconColour": "yellow",
+			"background": "yellow"
+		},
+		"IMPLEMENTATION": {
+			"icon": "code",
+			"iconColour": "cyan",
+			"background": "cyan"
+		}
+	}
+}
