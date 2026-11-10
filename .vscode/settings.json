@@ -86,7 +86,9 @@
 		"**/.idea": true,
 		"**/.next": true,
 		"**/coverage": true,
-		"**/.turbo": true
+		"**/.turbo": true,
+		"**/nod_modules": true,
+		"**/*.tsbuildinfo": true
 	},
 	//
 	// SVG associations
