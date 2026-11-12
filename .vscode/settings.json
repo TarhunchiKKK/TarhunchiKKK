@@ -31,7 +31,7 @@
 	//
 	// Scrolling
 	"editor.smoothScrolling": true,
-	"editor.scrollBeyondLastLine": true,
+	"editor.scrollBeyondLastLine": false,
 	"editor.scrollbar.horizontal": "visible",
 	"editor.scrollbar.vertical": "visible",
 	"editor.stickyScroll.scrollWithEditor": false,
@@ -59,7 +59,7 @@
 	// Cursor settings
 	"editor.cursorBlinking": "phase",
 	"editor.cursorStyle": "block",
-	"editor.cursorSmoothCaretAnimation": "explicit",
+	"editor.cursorSmoothCaretAnimation": "off",
 	//
 	// Font setings
 	"editor.fontSize": 14,
@@ -87,7 +87,7 @@
 		"**/.next": true,
 		"**/coverage": true,
 		"**/.turbo": true,
-		"**/nod_modules": true,
+		"**/node_modules": true,
 		"**/*.tsbuildinfo": true
 	},
 	//
@@ -122,8 +122,8 @@
 	//
 	// JS / TS Settigns
 	"js/ts.updateImportsOnFileMove.enabled": "always",
-	"js/ts.preferences.quoteStyle": "single",
-	"js/ts.format.semicolons": "remove",
+	"js/ts.preferences.quoteStyle": "double",
+	"js/ts.format.semicolons": "insert",
 	"js/ts.implicitProjectConfig.experimentalDecorators": true,
 	//
 	// Markdown settigns
@@ -183,7 +183,7 @@
 	// BiomeJS
 	"editor.defaultFormatter": "biomejs.biome",
 	"editor.codeActionsOnSave": {
-		"source.organizeImports": "explicit",
+		// "source.organizeImports": "explicit",
 		"source.fixAll.biome": "explicit",
 		"source.removeUnusedImports": "explicit"
 	},
